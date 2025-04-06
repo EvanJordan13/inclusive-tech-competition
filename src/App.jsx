@@ -102,31 +102,31 @@ function App() {
   const teamMembers = [
     {
       id: 1,
-      name: "Alex Rivera",
+      name: "Evan Jordan",
       role: "Founder & Lead Instructor",
       description: "Passionate about making tech education accessible to everyone.",
-      image: "https://randomuser.me/api/portraits/women/12.jpg"
+      image: "https://randomuser.me/api/portraits/lego/2.jpg"
     },
     {
       id: 2,
-      name: "Jordan Chen",
+      name: "Alondra Gonzalez",
       role: "Accessibility Specialist",
       description: "Dedicated to creating inclusive digital experiences.",
-      image: "https://randomuser.me/api/portraits/men/22.jpg"
+      image: "https://randomuser.me/api/portraits/lego/8.jpg"
     },
     {
       id: 3,
-      name: "Taylor Johnson",
+      name: "Ari Zukerman",
       role: "Community Manager",
       description: "Building bridges between diverse tech communities.",
-      image: "https://randomuser.me/api/portraits/women/33.jpg"
+      image: "https://randomuser.me/api/portraits/lego/0.jpg"
     },
     {
       id: 4,
-      name: "Sam Washington",
+      name: "Allison Qiu",
       role: "Content Creator",
       description: "Develops learning materials that reflect diverse perspectives.",
-      image: "https://randomuser.me/api/portraits/men/44.jpg"
+      image: "https://randomuser.me/api/portraits/lego/6.jpg"
     }
   ]
 
@@ -591,6 +591,22 @@ function App() {
                     </li>
                   </ul>
                 </div>
+              </div>
+            </section>
+
+            <section className="team-section">
+              <h3 className="section-heading">Meet Our Team</h3>
+              <div className="team-grid">
+                {teamMembers.map(member => (
+                  <div key={member.id} className="team-card">
+                    <img src={member.image} alt="" className="team-image" />
+                    <div className="team-info">
+                      <h4>{member.name}</h4>
+                      <p className="team-role">{member.role}</p>
+                      <p className="team-description">{member.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </section>
 
