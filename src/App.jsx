@@ -564,7 +564,7 @@ function App() {
                 <div className="mission-text">
                   <h3>Our Story</h3>
                   <p>
-                    DiverseYourSkills was founded in 2022 with a simple yet powerful vision: to create a tech education platform that truly represents and serves everyone. We recognized that traditional tech education often overlooks the unique challenges faced by underrepresented groups in technology.
+                    DiverseYourSkills was founded in 2025 with a simple yet powerful vision: to create a tech education platform that truly represents and serves everyone. We recognized that traditional tech education often overlooks the unique challenges faced by underrepresented groups in technology.
                   </p>
                   <p>
                     What began as a small collection of tutorials and a forum has grown into a vibrant community of learners, educators, and industry professionals committed to making technology skills accessible to all.
@@ -591,22 +591,6 @@ function App() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </section>
-
-            <section className="team-section">
-              <h3 className="section-heading">Meet Our Team</h3>
-              <div className="team-grid">
-                {teamMembers.map(member => (
-                  <div key={member.id} className="team-card">
-                    <img src={member.image} alt="" className="team-image" />
-                    <div className="team-info">
-                      <h4>{member.name}</h4>
-                      <p className="team-role">{member.role}</p>
-                      <p className="team-description">{member.description}</p>
-                    </div>
-                  </div>
-                ))}
               </div>
             </section>
 
